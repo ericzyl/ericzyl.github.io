@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_pic1.png"
+  avatar           : "profile_pic1.jpg"
   name             : "Yilin Zhu"
   pronouns         : # example: "she/her"  
   bio              : "I am currently a first year MA Statistics student."
