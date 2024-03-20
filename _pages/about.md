@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a first year Statistics Master's student at Columbia University. My area of interest is machine learning and optimization, particularly in algorithmic fairness and personalization.
+I am currently a first year Statistics Master's student at Columbia University. My area of interest is machine learning and optimization, particularly in algorithmic fairness and personalization. I am actively looking for research opportunities in machine learning.
 
 <!---
 A data-driven personal website
