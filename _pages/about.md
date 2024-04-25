@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first year Statistics Master's student at Columbia University. My area of interest is machine learning in social sciences, particularly in crime analysis and related aspects in legal system. I am interested in topics such as natural language processing, algorithmic fairness, and personalization. I am actively looking for research opportunities.
+I am a first year Statistics Master's student at Columbia University. My area of interest is Computational Statistics, particularly in network analysis and spatialtemporal analysis. My interests include interest includes deep generative model, physcis-informed deep learning, and interpretable machine learning. I am actively looking for research opportunities.
 
 
 <!---
