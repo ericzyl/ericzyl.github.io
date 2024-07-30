@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first year Statistics Master's student at Columbia University. My area of interest is Computational Statistics, particularly in network analysis and spatialtemporal analysis. My interests also include deep generative model, physcis-informed deep learning, and interpretable machine learning. I am actively looking for research opportunities.
+I am a second year Statistics Master's student at Columbia University. My undergraduate studies were in Applied Math & Computer Science at UC San Diego. major in Applied Math & Computer Science. My area of interest include machine learning, optimal transport, optimization, and NLP. I am actively looking for research opportunities.
 
 
 <!---
