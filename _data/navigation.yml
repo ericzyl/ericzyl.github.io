@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "CV"
-    url: /files/cv_20240730.pdf
+    url: /files/cv_yilin_zhu.pdf
     
 #  - title: "Publications"
 #    url: /publications/
@@ -12,8 +12,8 @@ main:
 #  - title: "Teaching"
 #    url: /teaching/    
     
-#  - title: "Portfolio"
-#    url: /portfolio/
+ - title: "Portfolio"
+   url: /files/Presentation/LOTT_Poster.pdf
         
 #  - title: "Blog Posts"
 #    url: /year-archive/

@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a second year Statistics Master's student at Columbia University. My undergraduate studies were in Applied Math & Computer Science at UC San Diego. My area of interest include machine learning, optimal transport, optimization, and NLP. I am actively looking for research opportunities. I am pursuing PhD in Applied Math / Data Science in the fall 2025.
+I am a second year Statistics Master's student at Columbia University. My undergraduate studies were in Applied Math & Computer Science at UC San Diego. My area of interest includes machine learning, optimal transport, and data-driven optimization. Recently, I become interested in designing scalable algorithms in OT extension problems. I am actively looking for research opportunities and pursuing PhD in Applied Math / Data Science in the fall 2025.
 
 
 <!---
