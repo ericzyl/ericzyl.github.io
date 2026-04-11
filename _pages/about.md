@@ -11,6 +11,8 @@ redirect_from:
 I am an <span class="gradient-text">AI Engineer</span> at <span class="gradient-text">Huawei</span>, focusing on AI infrastructure in the inference group. I obtained my Master's degree from <span class="gradient-text">Columbia University</span> in May 2025, advised by Dr. Parijat Dube. Before that, I obtained my Bachelor's degree with a dual major in Applied Mathematics and Computer Science from the University of California, San Diego in 2023.
 </div>
 
+&nbsp;
+
 <div class="animate-on-scroll" style="animation-delay: 0.2s;">
 My research interests lie in the foundations of data science, particularly in mathematical foundations underlying deep learning training. My work focuses on developing efficient models that bring frontier AI to everyday platforms.
 </div>
