@@ -1,0 +1,195 @@
+/* ==========================================================================
+   Custom Animation Effects
+   ========================================================================== */
+
+/* Particle Canvas Container */
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Scroll Animation Base Styles */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Animation In State */
+.animate-on-scroll.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Different Animation Directions */
+.animate-from-left {
+  transform: translateX(-30px);
+}
+
+.animate-from-left.animate-in {
+  transform: translateX(0);
+}
+
+.animate-from-right {
+  transform: translateX(30px);
+}
+
+.animate-from-right.animate-in {
+  transform: translateX(0);
+}
+
+.animate-scale {
+  transform: scale(0.9);
+}
+
+.animate-scale.animate-in {
+  transform: scale(1);
+}
+
+/* Author Profile Card 3D Effect */
+.author__content {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.author__content:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhance author profile image */
+.author__avatar {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.2);
+}
+
+.author__avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 86, 179, 0.3);
+}
+
+/* Gradient text effect for keywords */
+.gradient-text {
+  background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* Enhanced button hover effects */
+.btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.3);
+}
+
+/* Link hover effects */
+a {
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Page content fade in */
+.page__content {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sidebar styling enhancement */
+.sidebar {
+  animation: slideInRight 0.6s ease-out 0.3s both;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Main content area styling */
+.page {
+  animation: slideInUp 0.8s ease-out 0.5s both;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  #particle-canvas {
+    opacity: 0.4; /* Subtler effect on mobile */
+  }
+
+  .animate-on-scroll {
+    /* Reduce animation impact on mobile for better performance */
+    transition-duration: 0.5s;
+  }
+}
+
+/* Performance optimization - reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  #particle-canvas {
+    display: none;
+  }
+}
+
+/* Loading state for smooth transitions */
+.loading * {
+  transition: none !important;
+}

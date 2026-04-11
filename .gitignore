@@ -3,3 +3,9 @@ _site/
 
 # Ignore the Gemfile that is generated
 Gemfile.lock
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Claude Code working files
+.claude/

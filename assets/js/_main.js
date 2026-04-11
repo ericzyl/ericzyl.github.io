@@ -95,4 +95,69 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
+  // Load particle system on homepage
+  if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    $.getScript('/assets/js/particles.js', function() {
+      console.log('Particle system loaded');
+    });
+  }
+
+  // Scroll-triggered animations using Intersection Observer
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Add staggered delay for multiple elements
+          setTimeout(() => {
+            entry.target.classList.add('animate-in');
+          }, index * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements with animation classes
+    $('.animate-on-scroll').each(function() {
+      observer.observe(this);
+    });
+  } else {
+    // Fallback for browsers without Intersection Observer
+    $('.animate-on-scroll').addClass('animate-in');
+  }
+
+  // 3D Card Tilt Effect for author profile
+  const authorCard = $('.author__content');
+  if (authorCard.length > 0) {
+    authorCard.on('mousemove', function(e) {
+      const card = $(this);
+      const rect = card[0].getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = (y - centerY) / 20; // Max 5 degrees
+      const rotateY = (centerX - x) / 20;  // Max 5 degrees
+
+      card.css({
+        'transform': `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`,
+        'transition': 'transform 0.1s ease-out'
+      });
+    });
+
+    authorCard.on('mouseleave', function() {
+      $(this).css({
+        'transform': 'perspective(1000px) rotateX(0) rotateY(0) scale(1)',
+        'transition': 'transform 0.3s ease-out'
+      });
+    });
+  }
+
 });

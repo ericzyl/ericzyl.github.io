@@ -2,12 +2,18 @@
 permalink: /
 title: "Hello, I am Yilin!"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a second year Statistics Master's student at Columbia University. My undergraduate studies were in Applied Math & Computer Science at UC San Diego. My area of interest includes machine learning, optimal transport, and data-driven optimization. Recently, I become interested in designing scalable algorithms in OT extension problems. I am actively looking for research opportunities and pursuing PhD in Applied Math / Data Science in the fall 2025.
+<div class="animate-on-scroll">
+I am an <span class="gradient-text">AI Engineer</span> at <span class="gradient-text">Huawei</span>, focusing on AI infrastructure in the inference group. I obtained my Master's degree from <span class="gradient-text">Columbia University</span> in May 2025, advised by Dr. Parijat Dube. Before that, I obtained my Bachelor's degree with a dual major in Applied Mathematics and Computer Science from the University of California, San Diego in 2023.
+</div>
+
+<div class="animate-on-scroll" style="animation-delay: 0.2s;">
+My research interests lie in the foundations of data science, particularly in mathematical foundations underlying deep learning training. My work focuses on developing efficient models that bring frontier AI to everyday platforms.
+</div>
 
 
 <!---
