@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <div class="animate-on-scroll">
-I am an <span class="gradient-text">AI Engineer</span> at <span class="gradient-text">Huawei</span>, focusing on AI infrastructure in the inference group. I obtained my Master's degree from <span class="gradient-text">Columbia University</span> in May 2025, advised by Dr. Parijat Dube. Before that, I obtained my Bachelor's degree with a dual major in Applied Mathematics and Computer Science from the University of California, San Diego in 2023.
+I am an <span class="gradient-text">AI Infra Engineer</span> at <span class="gradient-text">Huawei</span>. 
 </div>
 
 &nbsp;
