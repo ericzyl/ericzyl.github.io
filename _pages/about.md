@@ -7,15 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-<div class="animate-on-scroll">
-I am an <span class="gradient-text">AI Infra Engineer</span> at <span class="gradient-text">Huawei</span>. 
-</div>
+I am an AI Infra Engineer at Huawei.
 
-&nbsp;
-
-<div class="animate-on-scroll" style="animation-delay: 0.2s;">
-My research interests lie in the foundations of data science, particularly in mathematical foundations underlying deep learning training. My work focuses on developing efficient models that bring frontier AI to everyday platforms.
-</div>
+My research interests lie in the foundations of data science, particularly in geometric data analysis and mathematical foundations for deep learning. My work involves developing efficient models that bring frontier AI to everyday platforms. 
 
 
 <!---
